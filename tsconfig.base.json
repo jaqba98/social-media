@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@social-media/fe/controls": ["libs/fe/controls/src/index.ts"],
       "@social-media/fe/styles": ["libs/fe/styles/src/index.ts"]
     }
   },

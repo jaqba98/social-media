@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import {ButtonModule} from "primeng/button";
+import {Component} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {FeControlsModule} from "@social-media/fe/controls";
 
 @Component({
   standalone: true,
-  imports: [RouterModule, ButtonModule],
+  imports: [RouterModule, FeControlsModule],
   selector: 'social-media-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
