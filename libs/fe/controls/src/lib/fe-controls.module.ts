@@ -1,18 +1,18 @@
 import {NgModule} from "@angular/core";
 import {ButtonNativeComponent} from "./native/button-native/button-native.component";
 import {ButtonModule} from "primeng/button";
-import {ButtonComponent} from "./control/button/button.component";
+import {ButtonControlComponent} from "./control/button-control/button-control.component";
 
 @NgModule({
   declarations: [
     ButtonNativeComponent,
-    ButtonComponent
+    ButtonControlComponent
   ],
   imports: [
     ButtonModule
   ],
   exports: [
-    ButtonComponent
+    ButtonControlComponent
   ]
 })
 export class FeControlsModule {
