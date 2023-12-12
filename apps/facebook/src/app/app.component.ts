@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
 import {RouterModule} from '@angular/router';
-import {FeControlsModule} from "@social-media/fe/controls";
+import {FeFormsModule} from "@social-media/fe/forms";
 
 @Component({
   standalone: true,
-  imports: [RouterModule, FeControlsModule],
+  imports: [RouterModule, FeFormsModule],
   selector: 'social-media-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
