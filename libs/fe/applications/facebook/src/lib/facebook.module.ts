@@ -3,6 +3,7 @@ import {RouterModule} from "@angular/router";
 
 import {FeFormsModule} from "@social-media/fe/forms";
 import {HomeComponent} from "./pages/home/home.component";
+import {BoardComponent} from "./pages/board/board.component";
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import {HomeComponent} from "./pages/home/home.component";
     FeFormsModule
   ],
   declarations: [
-    HomeComponent
+    HomeComponent,
+    BoardComponent
   ],
   exports: [
     RouterModule
