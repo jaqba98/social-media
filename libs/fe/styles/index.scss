@@ -1,7 +1,1 @@
-@use "styles/abstract/index" as abstract;
-@use "styles/base/index" as base;
-@use "styles/components/index" as components;
-@use "styles/layout/index" as layout;
-@use "styles/pages/index" as pages;
-@use "styles/themes/index" as themes;
-@use "styles/vendors/index" as vendors;
+@forward "styles/index";
