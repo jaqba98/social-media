@@ -21,6 +21,7 @@
           "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
           "node_modules/primeng/resources/primeng.min.css",
           "libs/fe/styles/index.scss",
+          "libs/fe/applications/facebook/src/index.scss",
           "apps/facebook/src/styles.scss"
         ],
         "scripts": []

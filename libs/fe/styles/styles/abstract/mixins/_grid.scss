@@ -1,0 +1,37 @@
+@use "../variables/screen-sizes";
+
+@mixin _grid($cols, $rows, $screen-size) {
+  @media (max-width: $screen-size) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+  }
+}
+
+@mixin grid-small-mobile($cols, $rows) {
+  @include _grid($cols, $rows, screen-sizes.$small-mobile);
+}
+
+@mixin grid-middle-mobile($cols, $rows) {
+  @include _grid($cols, $rows, screen-sizes.$middle-mobile);
+}
+
+@mixin grid-large-mobile($cols, $rows) {
+  @include _grid($cols, $rows, screen-sizes.$large-mobile);
+}
+
+@mixin grid-tablet($cols, $rows) {
+  @include _grid($cols, $rows, screen-sizes.$tablet);
+}
+
+@mixin grid-laptop($cols, $rows) {
+  @include _grid($cols, $rows, screen-sizes.$laptop);
+}
+
+@mixin grid-large-laptop($cols, $rows) {
+  @include _grid($cols, $rows, screen-sizes.$large-laptop);
+}
+
+@mixin grid-tv($cols, $rows) {
+  @include _grid($cols, $rows, screen-sizes.$tv);
+}
