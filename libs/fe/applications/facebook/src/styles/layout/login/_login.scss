@@ -16,12 +16,21 @@
 
 .login__header {
   @include styles.grid-area(header);
+  padding: 2rem;
+  text-align: center;
+  background-color: orange;
 }
 
 .login__login {
   @include styles.grid-area(login);
+  padding: 2rem;
+  text-align: center;
+  background-color: blueviolet;
 }
 
 .login__footer {
   @include styles.grid-area(footer);
+  padding: 2rem;
+  text-align: center;
+  background-color: orangered;
 }
