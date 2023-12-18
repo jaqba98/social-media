@@ -1,7 +1,7 @@
 @use "../variables/screen-sizes";
 
 @mixin _grid($cols, $rows, $screen-size) {
-  @media (max-width: $screen-size) {
+  @media (min-width: $screen-size) {
     display: grid;
     grid-template-columns: repeat($cols, 1fr);
     grid-template-rows: repeat($rows, 1fr);

@@ -1,0 +1,27 @@
+@use "../../../../../../styles/index" as styles;
+
+.login {
+  @include styles.grid-small-mobile(1, 3);
+  @include styles.grid-tablet(2, 2);
+  @include styles.grid-areas-small-mobile(
+    "header"
+    "login"
+    "footer"
+  );
+  @include styles.grid-areas-tablet(
+    "header login"
+    "footer footer"
+  );
+}
+
+.login__header {
+  @include styles.grid-area(header);
+}
+
+.login__login {
+  @include styles.grid-area(login);
+}
+
+.login__footer {
+  @include styles.grid-area(footer);
+}

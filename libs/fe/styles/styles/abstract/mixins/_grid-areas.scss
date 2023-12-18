@@ -1,7 +1,7 @@
 @use "../variables/screen-sizes";
 
 @mixin _grid-areas($template, $screen-size) {
-  @media (max-width: $screen-size) {
+  @media (min-width: $screen-size) {
     grid-template-areas: $template;
   }
 }
