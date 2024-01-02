@@ -1,37 +1,43 @@
 @use "../variables/screen-sizes";
 
-@mixin _grid($cols, $rows, $screen-size) {
+@mixin _grid($template, $screen-size) {
   @media (min-width: $screen-size) {
     display: grid;
-    grid-template-columns: repeat($cols, 1fr);
-    grid-template-rows: repeat($rows, 1fr);
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: $template;
+    overflow: hidden;
   }
 }
 
-@mixin grid-small-mobile($cols, $rows) {
-  @include _grid($cols, $rows, screen-sizes.$small-mobile);
+@mixin grid-small-mobile($template) {
+  @include _grid($template, screen-sizes.$small-mobile);
 }
 
-@mixin grid-middle-mobile($cols, $rows) {
-  @include _grid($cols, $rows, screen-sizes.$middle-mobile);
+@mixin grid-middle-mobile($template) {
+  @include _grid($template, screen-sizes.$middle-mobile);
 }
 
-@mixin grid-large-mobile($cols, $rows) {
-  @include _grid($cols, $rows, screen-sizes.$large-mobile);
+@mixin grid-large-mobile($template) {
+  @include _grid($template, screen-sizes.$large-mobile);
 }
 
-@mixin grid-tablet($cols, $rows) {
-  @include _grid($cols, $rows, screen-sizes.$tablet);
+@mixin grid-tablet($template) {
+  @include _grid($template, screen-sizes.$tablet);
 }
 
-@mixin grid-laptop($cols, $rows) {
-  @include _grid($cols, $rows, screen-sizes.$laptop);
+@mixin grid-laptop($template) {
+  @include _grid($template, screen-sizes.$laptop);
 }
 
-@mixin grid-large-laptop($cols, $rows) {
-  @include _grid($cols, $rows, screen-sizes.$large-laptop);
+@mixin grid-large-laptop($template) {
+  @include _grid($template, screen-sizes.$large-laptop);
 }
 
-@mixin grid-tv($cols, $rows) {
-  @include _grid($cols, $rows, screen-sizes.$tv);
+@mixin grid-tv($template) {
+  @include _grid($template, screen-sizes.$tv);
+}
+
+@mixin grid-area-name($grid-area-name) {
+  grid-area: $grid-area-name;
 }
