@@ -37,7 +37,3 @@
 @mixin grid-tv($template) {
   @include _grid($template, screen-sizes.$tv);
 }
-
-@mixin grid-area-name($grid-area-name) {
-  grid-area: $grid-area-name;
-}
