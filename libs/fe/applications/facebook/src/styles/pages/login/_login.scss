@@ -1,0 +1,13 @@
+@use "../../../../../../styles/src/index" as styles;
+
+.login {
+  @include styles.grid-small-mobile(
+      "header"
+      "login"
+      "footer"
+  );
+  @include styles.grid-tablet(
+      "header login"
+      "footer footer"
+  );
+}

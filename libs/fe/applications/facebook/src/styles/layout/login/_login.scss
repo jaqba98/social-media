@@ -1,17 +1,5 @@
 @use "../../../../../../styles/src" as styles;
 
-.login {
-  @include styles.grid-small-mobile(
-    "header"
-    "login"
-    "footer"
-  );
-  @include styles.grid-tablet(
-    "header login"
-    "footer footer"
-  );
-}
-
 .login__header {
   @include styles.grid-area-name(header);
   padding: 2rem;
@@ -32,3 +20,4 @@
   text-align: center;
   background-color: orangered;
 }
+
