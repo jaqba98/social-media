@@ -1,23 +1,46 @@
 @use "../../../../../../styles/src" as styles;
 
+.login {}
+
 .login__header {
-  @include styles.grid-area-name(header);
+  @include styles.set-grid-area(header);
   padding: 2rem;
   text-align: center;
-  background-color: orange;
+  background-color: #f0f2f5;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__title {
+  color: #0165E1;
+  text-align: left;
+  width: 50%;
+  font-size: 4em;
+  margin-bottom: 0.25em;
+}
+
+.login__motto {
+  color: #1c1e21;
+  text-align: left;
+  width: 50%;
+  font-size: 1.5em;
 }
 
 .login__login {
-  @include styles.grid-area-name(login);
+  @include styles.set-grid-area(login);
   padding: 2rem;
   text-align: center;
   background-color: blueviolet;
 }
 
 .login__footer {
-  @include styles.grid-area-name(footer);
+  @include styles.set-grid-area(footer);
   padding: 2rem;
   text-align: center;
   background-color: orangered;
+  height: 30vh;
 }
 

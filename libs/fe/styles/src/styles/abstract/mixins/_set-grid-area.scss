@@ -1,0 +1,3 @@
+@mixin set-grid-area($name) {
+  grid-area: $name;
+}
