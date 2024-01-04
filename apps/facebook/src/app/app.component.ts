@@ -6,8 +6,7 @@ import {FacebookModule} from "@social-media/fe/facebook";
   standalone: true,
   imports: [FacebookModule],
   selector: 'social-media-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
 }
